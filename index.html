@@ -290,11 +290,7 @@ DATOS
             <img src="images.png" alt="UPLA" onerror="this.style.display='none'">
         </div>
         <div class="logo-text">
-            <span class="logo-main">ALGORITMOS Y
-
-ESTRUCTURAS DE
-
-DATOS</span>
+            <span class="logo-main">Base de Datos II</span>
             <span class="logo-sub">UPLA · Huancayo</span>
             <span class="db-status" id="dbStatus">
                 <span class="db-dot" id="dbDot"></span>
@@ -1075,7 +1071,7 @@ function escH(s) {
 /* ═══════════════════════════════════════════
    🤖 CHATBOT CON IA
 ═══════════════════════════════════════════ */
-const suggestions = ["¿Qué es algoritmos y estructuras de datos?","¿Qué son los procedimientos almacenados?","Explica normalización",""¿Qué hay en Semana 1?"];
+const suggestions = ["¿Qué es un trigger?","¿Qué son los procedimientos almacenados?","Explica normalización","¿Qué es SQL Server?","¿Qué hay en Semana 1?"];
 
 function toggleChat() {
     chatOpen = !chatOpen;
@@ -1086,7 +1082,7 @@ function toggleChat() {
 }
 
 function initChat() {
-    chatHistory = [{ role:"assistant", content:"¡Hola! Soy **DataBot UPLA** 🤖\n\nAsistente de **Phol Antoni** para algoritmos y estructuras de datos. Puedo ayudarte con conceptos de algoritmos y estructuras de datos, triggers, procedimientos, normalización y más.\n\n¿En qué te puedo ayudar?" }];
+    chatHistory = [{ role:"assistant", content:"¡Hola! Soy **DataBot UPLA** 🤖\n\nAsistente de **Phol Antoni** para Base de Datos II. Puedo ayudarte con conceptos de SQL, triggers, procedimientos, normalización y más.\n\n¿En qué te puedo ayudar?" }];
     renderMsgs();
     renderSugs();
 }
@@ -1135,7 +1131,7 @@ async function enviarMensaje() {
         return `${sem}: ${ts}`;
     }).join("\n");
 
-    const sys = `Eres DataBot UPLA, asistente académico del repositorio de Phol Antoni Canez Quispe, Ingeniería de Sistemas UPLA Huancayo, curso algoritmos y estructuras de datos.\n\nREPOSITORIO ACTUAL:\n${repoInfo}\n\nResponde en español, amigable y técnico. Máximo 150 palabras. Usa ** para negrita.`;
+    const sys = `Eres DataBot UPLA, asistente académico del repositorio de Phol Antoni Canez Quispe, Ingeniería de Sistemas UPLA Huancayo, curso Base de Datos II.\n\nREPOSITORIO ACTUAL:\n${repoInfo}\n\nResponde en español, amigable y técnico. Máximo 150 palabras. Usa ** para negrita.`;
 
     try {
         const res  = await fetch("https://api.anthropic.com/v1/messages", {
