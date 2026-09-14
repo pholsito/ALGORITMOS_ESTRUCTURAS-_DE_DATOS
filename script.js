@@ -1,10 +1,12 @@
 // ============================================================
 // ⚙️  CONFIGURACIÓN SUPABASE
 // ============================================================
-const SUPABASE_URL = "https://vsamooxhskbxwutbpazi";
+// ============================================================
+// ⚙️  CONFIGURACIÓN SUPABASE
+// ============================================================
+const SUPABASE_URL = "https://vsamooxhskbxwutbpazi.supabase.co"; // ✅ CORREGIDO
 const SUPABASE_KEY = "sb_publishable_2Ugi7tFSlsS4H7MUbu_37w_Zi9hC8TX";
 const STORAGE_BUCKET = "trabajos";
-
 // ============================================================
 // 🔐  CREDENCIALES ADMIN
 // ============================================================
